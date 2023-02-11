@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+
+</head>
+<body>
+  <header class="main-header max-container">
+    <div class="header__container--left">
+      <div class="toggle-menu" id="toggle-menu">
+        <img src="images/icon-menu.svg" alt="menu icono" class="menu-icon" id="menu-icon">
+        
+        
+      </div>
+      <img src="/images/logo.svg" alt="logo image" class="logo">
+      <nav class="main-nav" id="main-menu">
+        <ul class="menu" >
+          <li class="menu__item"><a href="" class="menu__link active">Collections</a></li>
+          <li class="menu__item ">
+              <a href="" class="menu__link ">Men</a>
+          </li>
+          <li class="menu__item">
+              <a href="" class="menu__link">Women</a>
+          </li>
+          <li class="menu__item">
+              <a href="" class="menu__link">About</a>
+          </li>
+          <li class="menu__item">
+              <a href="" class="menu__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__container--right">
+      <div class="toggle-cart" id="toggle-cart">
+        <img src="/images/icon-cart.svg" alt="icono cart" class="icon">
+        <span ></span>
+      </div>
+      <img src="/images/image-avatar.png" alt="imagen perfil" class="img-profile">
+    </div>
+    <div class="cart" id="cart">
+      <div class="cart-header">
+        <p class="cart-text title-text">Cart</p>
+      </div>
+      <div class="cart-container">
+        <p class="cart-text description-text">Your cart is empty</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-container max-container">
+    <div class=" column--left ">
+      <div class="slide-container" id="slide-container">
+          
+        <img class="icon-back icono" id="back" src="/images/icon-previous.svg" alt="icon-previous">
+        <img class="icon-next icono" id="next" src="/images/icon-next.svg" alt="next">
+        <div class="slide" id="slide">
+          
+          <li class="slide__item">
+            <img src="/images/image-product-1.jpg" alt="" class="slide__img">
+          </li>
+          <li class="slide__item">
+            <img src="/images/image-product-2.jpg" alt="" class="slide__img">
+          </li>
+          <li class="slide__item">
+            <img src="/images/image-product-3.jpg" alt="" class="slide__img">
+          </li>
+          <li class="slide__item">
+            <img src="/images/image-product-4.jpg" alt="" class="slide__img">
+          </li>
+          
+        </div>
+        
+      
+      </div>
+
+      <div class="paginacion" id="paginacion">
+        <li class="paginacion__item">
+          <img src="/images/image-product-1-thumbnail.jpg" alt="Paginacion" class="img__paginacion" data-pagination="translatex(0%)">
+        </li>
+        <li class="paginacion__item">
+          <img src="/images/image-product-2-thumbnail.jpg" alt="Paginacion" class="img__paginacion" data-pagination="translatex(-100%)">
+        </li>
+        <li class="paginacion__item">
+          <img src="/images/image-product-3-thumbnail.jpg" alt="Paginacion" class="img__paginacion" data-pagination="translatex(-200%)">
+        </li>
+        <li class="paginacion__item">
+          <img src="/images/image-product-4-thumbnail.jpg" alt="Paginacion" class="img__paginacion" data-pagination="translatex(-300%)"> 
+        </li>
+      </div>
+    </div>
+    <div class="container column--right">
+      <p class="header__text">Sneaker Company</p>
+      <h1 class="header__title">Fall Limited Edition Sneakers</h1>
+      <p class="text__description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      <div class="group__price">
+        <div class="group__discount" id="discount">
+          <span class="price">$125.00</span>
+          <span class="price--discount">50%</span>
+        </div>
+        <div class="group__price__original">
+          <span class="price price__original">$250.00</span>
+        </div>
+      </div>
+      <form action="" class="form">
+        <div class="aumento">
+          <img src="/images/icon-minus.svg" alt="" id="decrement" class="input__img input__img--decre">
+          <input id="input" type="number" value="0" min="0" max="50" class="form__input" readonly>
+          <img src="/images/icon-plus.svg" alt="" id="increment" class="input__img">
+        </div>
+        <button id="button" class="form__button button">
+          <img src="/images/icon-cart.svg" alt="" class="img__logo">
+          <p class="form__text"> Add to cart</p>
+        </button>
+      </form>
+
+
+    </div>
+    <div class="modal">
+      <div class="modal-container">
+        <img src="/images/icon-close.svg" class="icon icono-close" alt="icon-close" >
+        <img class="icon-back icono" id="back2" src="/images/icon-previous.svg" alt="icon-previous">
+        <img class="icon-next icono" id="next2" src="/images/icon-next.svg" alt="next">
+        <div class="slide-container" id="">
+            
+          <div class="slide slide2" id="slide2">
+            
+            <li class="slide__item">
+              <img src="/images/image-product-1.jpg" alt="" class="slide__img">
+            </li>
+            <li class="slide__item">
+              <img src="/images/image-product-2.jpg" alt="" class="slide__img">
+            </li>
+            <li class="slide__item">
+              <img src="/images/image-product-3.jpg" alt="" class="slide__img">
+            </li>
+            <li class="slide__item">
+              <img src="/images/image-product-4.jpg" alt="" class="slide__img">
+            </li>
+            
+          </div>
+          
+        
+        </div>
+  
+        <div class="paginacion" id="paginacion2">
+          <li class="paginacion__item">
+            <img src="/images/image-product-1-thumbnail.jpg" alt="Paginacion" class="img__paginacion" data-pagination="translatex(0%)">
+          </li>
+          <li class="paginacion__item">
+            <img src="/images/image-product-2-thumbnail.jpg" alt="Paginacion" class="img__paginacion" data-pagination="translatex(-100%)">
+          </li>
+          <li class="paginacion__item">
+            <img src="/images/image-product-3-thumbnail.jpg" alt="Paginacion" class="img__paginacion" data-pagination="translatex(-200%)">
+          </li>
+          <li class="paginacion__item">
+            <img src="/images/image-product-4-thumbnail.jpg" alt="Paginacion" class="img__paginacion" data-pagination="translatex(-300%)"> 
+          </li>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  
+  
+  
+  
+
+  
+<script src="/js/scripts.js"></script>
+</body>
+</html>
